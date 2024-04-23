@@ -1,5 +1,3 @@
 Rails.application.routes.draw do
- 
-  get 'home', to: 'pages#home', as: 'home'
- 
+  resources :products, only: [:index, :show]
 end
